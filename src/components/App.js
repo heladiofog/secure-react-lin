@@ -8,10 +8,14 @@ import About from './About';
 import data from '../data/data.json';
 import './App.css';
 
+const createMarkup = () => {
+  return { _html: 'Im so dangerous...you can feel it.' };
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state ={
+    this.state = {
       name: "Manny Henri",
       jumbotronTitle: "List of courses",
       feeds: [],
@@ -28,16 +32,18 @@ class App extends Component {
       <Router>
         <div className="container">
           <Navigation />
-          <Jumbotron title={this.state.jumbotronTitle}/>
+          <Jumbotron title={this.state.jumbotronTitle} />
           <Switch>
-            <Route path="/contact" component={Contact}/>
-            <Route path="/about" component={About}/>
+            <Route path="/contact" component={Contact} />
+            <Route path="/about" component={About} />
             <Route exact path="/" render={(props) => (
               <Feed feeds={this.state.feeds} />
             )} />
           </Switch>
           <div className="footer">
-                <p>&copy; {this.state.name} Inc.</p>
+            <p>&copy; {this.state.name} Inc.</p>
+            {/* <div innerHTML={createMarkup()}></div> */}
+            <div dangerouslySetInnerHTML={createMarkup()} />
           </div>
         </div>
       </Router>
