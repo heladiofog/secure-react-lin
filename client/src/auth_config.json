@@ -1,0 +1,5 @@
+{
+  "domain": "<ath0_app_domain>",
+  "clientId": "<client_id>",
+  "audience": "<Auth API Audience id>"
+}

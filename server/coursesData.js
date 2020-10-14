@@ -1,7 +1,7 @@
-[
+const courses = [
   {
     "id": 1,
-    "title": "Building an App with ReactJS and MeteorJS :O",
+    "title": "Building an App with ReactJS and MeteorJS",
     "link": "https://www.lynda.com/React-js-tutorials/Building-App-React-js-MeteorJS/533228-2.html",
     "description": "Meteor and React are a powerhouse combination. Meteor gives you a fast, easy-to-use solution for data management across clients and servers, and React gives you a way to structure your app's UI from reusable components. The combination allows you to create your dream apps: dynamic, data driven, and cross-platform."
   },
@@ -71,4 +71,6 @@
     "link": "https://www.lynda.com/GraphQL-tutorials/GraphQL-Data-Fetching-Relay/595829-2.html",
     "description": "Want to build more efficient, data-driven React.js applications? Streamline data retrieval with GraphQL and Relay. You can get exactly the data you need—nothing more, nothing less—and predictable results every time."
   }
-]
+];
+
+export { courses };
